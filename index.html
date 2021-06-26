@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+body{
+
+	background-image: url('webem.jpg') ;
+	 background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+
+
+.moveMe {
+  width: 500px;
+  height: 200px;
+   background-image: url("test1.png");
+    background-size: 100% 100%;
+      position: relative;
+  animation: myfirst 2s ;
+  animation-direction:normal; 
+
+}
+
+@keyframes myfirst {
+
+
+     0%   {background-image: url("test1.png");top: 180px;}
+          25%   {background-image: url("test1.png");left:0px; top: 180px;}
+  50%  {background-image: url("test1.png"); left: 90px; top: 180px;}
+
+}
+
+
+.moveMe
+{
+    width: 500px;
+    height: 200px;
+    background-image: url("test1.png");
+    position: absolute;
+   left: 90px;
+   top: 170px;
+    -webkit-transition: top 0.6s;
+    -moz-transition: top 0.6s;
+    -o-transition: top 0.6s;
+}
+
+.moveMe:hover
+{
+    top: 180px;
+    -webkit-transition: right 0.6s;
+    -moz-transition: right 0.6s;
+    -o-transition: right 0.6s;
+}
+
+
+</style>
+</head>
+<body>
+<div class="moveMe"></div>
+</body>
+</html>
